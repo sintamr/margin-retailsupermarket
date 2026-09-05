@@ -1,4 +1,3 @@
-
 <h1 align="center">Retail Supermarket Gross Profit Margin Analysis Report</h1>
 <table align="center">
   <tr>
@@ -28,23 +27,19 @@
 <h3 align="center">Gross Profit Margin Decline (April–May 2024)</h3>
 <table align="center" width="100%">
   <tr>
-    <td align="center" width="20%" style="border: 1px solid #ddd; padding: 10px;">
-      <strong>Data Cleaning Status</strong><br><br>
-      0 Missing Values, 0 Duplicates
-    </td>
-    <td align="center" width="20%" style="border: 1px solid #ddd; padding: 10px;">
+    <td align="center" width="25%" style="border: 1px solid #ddd; padding: 10px;">
       <strong>Normal Margin</strong><br><br>
       23.0%
     </td>
-    <td align="center" width="20%" style="border: 1px solid #ddd; padding: 10px;">
+    <td align="center" width="25%" style="border: 1px solid #ddd; padding: 10px;">
       <strong>April–May Low Margin</strong><br><br>
       21% & 17%
     </td>
-    <td align="center" width="20%" style="border: 1px solid #ddd; padding: 10px;">
+    <td align="center" width="25%" style="border: 1px solid #ddd; padding: 10px;">
       <strong>Fresh Food Margin Drop</strong><br><br>
       28% to 3.7%
     </td>
-    <td align="center" width="20%" style="border: 1px solid #ddd; padding: 10px;">
+    <td align="center" width="25%" style="border: 1px solid #ddd; padding: 10px;">
       <strong>Post-Eid Over-Order</strong><br><br>
       2.5x Gap
     </td>
@@ -76,7 +71,7 @@
         <li>
           <strong>Inventory & Operational Drivers:</strong>
           <ul>
-            <li>Post-Eid order volumes surged to 7.7 against actual sales of 2.9, creating a massive 2.5x over-ordering gap.</li>
+            <li>Post-Eid order volumes surged to 7.9 against actual sales of 3.1, creating a massive over-ordering gap.</li>
             <li>This overstock triggered a threefold increase in shrinkage (3.9% to 11.1%) and forced reactive discounting up to 19.8%.</li>
           </ul>
         </li>
@@ -116,8 +111,8 @@
       <strong>Order Quantity vs. Quantity Sold Dynamics</strong>
       <ol>
         <li>Post-Eid Demand Collapse vs. Over-Procurement <ul>
-            <li>During Lebaran Peak, Normal, and Pre-Lebaran periods, order quantities and quantities sold were tightly aligned (~3.1 ordered vs. 3.0 sold).</li>
-            <li>In the Post-Eid period, order quantity spiked to 7.7 while actual quantity sold dropped to 2.9, resulting in massive excess inventory.</li>
+            <li>During Lebaran Peak, Normal, and Pre-Lebaran periods, order quantities and quantities sold were tightly aligned.</li>
+            <li>In the Post-Eid period, order quantity spiked to 7.9 while actual quantity sold dropped, resulting in massive excess inventory.</li>
           </ul>
         </li>
       </ol>
@@ -130,67 +125,26 @@
   <tr>
     <td align="center" valign="top" width="50%">
       <h3>1. Monthly Gross Margin Trend Chart</h3>
-      <img width="450" alt="Monthly Gross Margin Trend" src="Tren Gross Margin Bulanan Tahun 2024.png" />
+      <div align="center">
+        <img width="450" alt="Monthly Gross Margin Trend" src="Tren Gross Margin Bulanan Tahun 2024.png" />
+      </div>
       <p style="text-align: left; font-size: 14px;"><strong>Line Chart:</strong> Displays the percentage trend of <em>Avg. Gross Margin</em> from January to December 2024. It shows a stable baseline at 23% in early 2024, dipping down to 21% in April and 17% in May, before fully recovering to 23% from June onwards.</p>
     </td>
     <td align="center" valign="top" width="50%">
       <h3>2. Margin Comparison by Category</h3>
-      <img width="450" alt="Margin Comparison by Category" src="margin by category.png" />
+      <div align="center">
+        <img width="450" alt="Margin Comparison by Category" src="margin by category.png" />
+      </div>
       <p style="text-align: left; font-size: 14px;"><strong>Bar Chart:</strong> Compares margins across categories (Beverages, Fresh Food, Frozen Food, Personal Care, Snacks) between Normal vs. Post-Eid conditions. It highlights the drastic collapse in the Fresh Food category from 28% to 3.7%, while all other departments remained steady.</p>
     </td>
   </tr>
   <tr>
     <td align="center" valign="top" width="100%" colspan="2">
       <h3>3. Order Quantity vs. Quantity Sold Chart</h3>
-      <img width="450" alt="Order Quantity vs Quantity Sold" src="Order Quantity vs. Quantity Sold Chart.png" />
-      <p style="text-align: left; font-size: 14px;"><strong>Clustered Bar Chart:</strong> Compares average <em>Order Quantity</em> against actual <em>Quantity Sold</em> across seasons (Lebaran Peak, Normal, Post-Lebaran, Pre-Lebaran). It demonstrates the stark over-procurement spike where orders averaged 7.7 against actual sales of 2.9 during the Post-Lebaran period.</p>
-    </td>
-  </tr>
-</table>
-
-<h1 align="center">Data Validation & Dataset Integrity</h1>
-<table align="center">
-  <tr>
-    <td width="1440">
-      <p>Data cleaning and validation were performed thoroughly using Excel audit tools to ensure high data reliability. Formulas such as <code>=COUNTBLANK</code> confirmed there are <strong>0 missing values</strong> across the dataset, and duplicate checking confirmed that <strong>no duplicate values</strong> exist. This guarantees that transaction integrity is fully intact and the observed profit margin anomalies are driven entirely by genuine operational and seasonal factors.</p>
-    </td>
-  </tr>
-</table>
-<table align="center">
-  <tr>
-    <td align="center" valign="top">
-      <h3>Audit Results from Excel Verification</h3>
-      <table>
-        <thead>
-          <tr>
-            <th>Check Performed</th>
-            <th>Result</th>
-            <th>Implication</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Missing Value Check (=COUNTBLANK)</td>
-            <td>0 Missing Values</td>
-            <td>Dataset is fully complete across all columns.</td>
-          </tr>
-          <tr>
-            <td>Duplicate Value Check (Excel Tool)</td>
-            <td>No duplicate values found</td>
-            <td>Transaction integrity is intact with zero repeated rows.</td>
-          </tr>
-        </tbody>
-      </table>
-    </td>
-  </tr>
-</table>
-<table>
-  <tr>
-    <td>
-      <ul>
-        <li>Dataset verification confirms that data quality issues did not skew the findings.</li>
-        <li>The anomaly discovered in April–May 2024 is entirely rooted in real operational and inventory management friction during the post-Eid demand drop.</li>
-      </ul>
+      <div align="center">
+        <img width="450" alt="Order Quantity vs Quantity Sold" src="Order Quantity vs. Quantity Sold Chart.png" />
+      </div>
+      <p style="text-align: left; font-size: 14px;"><strong>Clustered Bar Chart:</strong> Compares average <em>Order Quantity</em> against actual <em>Quantity Sold</em> across seasons (Lebaran Peak, Normal, Post-Lebaran, Pre-Lebaran). It demonstrates the stark over-procurement spike where orders averaged 7.9 against actual sales during the Post-Lebaran period.</p>
     </td>
   </tr>
 </table>
@@ -201,7 +155,7 @@
      <td width="900">
       <ul>
         <li><strong>What caused the decline?</strong> The gross margin drop was driven by a cascading failure in Fresh Food inventory management post-Eid: triple the shrinkage, heavy reactive markdowns, and an 8% supplier price hike.</li>
-        <li><strong>Why did it happen?</strong> The purchasing team failed to adjust order quantities to match the post-holiday demand collapse, continuing to order at peak rates (7.7 avg) while sales dropped to 2.9.</li>
+        <li><strong>Why did it happen?</strong> The purchasing team failed to adjust order quantities to match the post-holiday demand collapse, continuing to order at peak rates (7.9 avg) while actual sales dropped.</li>
         <li><strong>Is it business-wide?</strong> No, the issue is strictly category-specific to Fresh Food, while Beverages, Frozen Food, Personal Care, and Snacks remained completely stable.</li>
         <li><strong>How long did it last?</strong> The margin compression lasted only two months (April and May) before self-correcting back to the standard 23% baseline in June.</li>
       </ul>
